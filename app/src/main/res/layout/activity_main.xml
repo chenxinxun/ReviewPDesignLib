@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+        <android.support.design.button.MaterialButton
+            android:id="@+id/mMDButton"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/md_button"
+            android:gravity="center_vertical"
+            app:backgroundTint="@color/colorPrimary"
+            app:backgroundTintMode="src_over"
+            app:iconTint="@color/colorAccent"
+            app:rippleColor="@color/colorPrimary"
+            app:icon="@drawable/android_logo"
+            app:cornerRadius="10dp"/>
+
+        <android.support.design.card.MaterialCardView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="5dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            >
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/card_view"/>
+        </android.support.design.card.MaterialCardView>
+
+        <android.support.design.chip.ChipGroup
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:checkedChip="@color/colorPrimary"
+            app:singleSelection="true"
+
+            >
+            <android.support.design.chip.Chip
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:checked="true"
+                android:text="Filter Chip"
+                android:paddingLeft="12dp"
+                />
+            <android.support.design.chip.Chip
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                style="@style/Widget.MaterialComponents.Chip.Action"
+                android:gravity="center"
+                android:text="Action chip"/>
+            <android.support.design.chip.Chip
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:gravity="center"
+                android:text="Choice three"/>
+        </android.support.design.chip.ChipGroup>
+    </LinearLayout>
+
+
+    <android.support.design.bottomappbar.BottomAppBar
+        android:id="@+id/mButtonBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimary"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabAlignmentMode="center"
+        app:fabAttached="true"
+        app:fabCradleVerticalOffset="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bottom_view" />
+
+    </android.support.design.bottomappbar.BottomAppBar>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/mFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:src="@mipmap/ic_launcher"
+        app:layout_anchor="@+id/mButtonBar" />
+</android.support.design.widget.CoordinatorLayout>
