@@ -1,4 +1,4 @@
-# Revision 28.0.0 Alpha 1
+# Android P support 28.0.0-alpha1 Design 库预览
 2018三月，发布了Android p 预览版。想了解具体变化可以查看
 <a href="https://developer.android.com/preview/release-notes.html">release notes</a>
 这里重点看下MD设计相关的内容
